@@ -21,7 +21,7 @@ function reducer(todolist, action) {
       return todolist.filter((item) => item.id !== action.deleteId);
     case "edit_todo":
       const newTodolist = [...todolist];
-      const index = todolist.findIndex((e) => e.id === action.editId);
+      const index = todolist.findIndex((item) => item.id === action.editId);
       newTodolist[index] = { ...action.editTodo };
     default:
   }

@@ -45,7 +45,7 @@ function TodoTask({ setIsShow }) {
         <button onClick={clickHanlder}>Add</button>
       </div>
       <div className="add-button">
-        <button onClick={() => setIsShow(false)}>Cancle</button>
+        <button onClick={() => setIsShow(false)}>Cancel</button>
       </div>
     </div>
   );
